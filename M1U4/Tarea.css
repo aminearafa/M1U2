@@ -1,0 +1,22 @@
+h1{
+    text-transform: uppercase;
+    color: blue;
+    margin-left: 5%;
+}
+h2{
+    background-color: blue;
+    color: cornsilk;
+}
+p{
+    font-size: 24;
+    color: rgb(12, 0, 117);
+}
+.imagen{
+    border-style: double; color: blue;
+    margin-left: 5%;
+}
+.formulario{
+    background-color: rgb(93, 187, 241);
+    border-style: solid;color: blue;
+    margin-left: 2%;
+}

@@ -9,14 +9,27 @@ h2{
 }
 p{
     font-size: 24;
+    font-weight: bold;
     color: rgb(12, 0, 117);
 }
 .imagen{
-    border-style: double; color: blue;
     margin-left: 5%;
+    min-height: auto;
+    box-shadow: -15px 15px 30px blue;
+    border-radius: 25px;
 }
 .formulario{
     background-color: rgb(93, 187, 241);
     border-style: solid;color: blue;
     margin-left: 2%;
+}
+.amarillo{
+    height: 480px;
+    width: 480px;
+    background: rgb(34,195,182);
+background: linear-gradient(353deg, rgba(34,195,182,1) 0%, rgba(253,240,45,1) 42%);
+padding: 25px;
+border-radius: 25px;
+column-count: 3;
+
 }

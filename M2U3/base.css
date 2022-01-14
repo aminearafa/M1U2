@@ -1,15 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
-
 body {
 	color: #000;
 	background: #332F29;
 	font-size:100%;
 }
-#contenedor {
+.contenedor {
 	width: 800px;
 	background: #8FA68E;
-	margin:0auto;
+	margin:0 auto;
 	overflow: hidden;
 }
 nav {
@@ -17,21 +16,62 @@ nav {
 	float: left;
 	width: 160px;
 }
-ul {
+nav ul {
 	list-style-type:none;
 }
-a {
+nav ul li a {
 	color:#F1F2C0;
 	text-decoration: none;
 }
-section {
+.contenido {
 	background: #F1F2C0;
 	float: left;
 	margin: 0 0 0 25px;
 	width: 400px;
 }
-aside {
+#extras {
 	background: #CCC59E;
 	float: right;
 	width: 190px;
+}
+
+@media screen and (min-width: 230px) and (max-width: 800px){
+
+	body {
+		padding:0;
+		margin:0;
+	}
+	.contenedor {
+		background: #8FA68E;
+		width:100%;
+
+	}
+	nav {
+		background: #FC6;
+		float:none;
+		width:100%;
+	}
+    nav ul {
+		margin:0;
+	}
+	nav ul li a {
+		padding: 0.5em;
+		display: block;
+		color:#000;
+	}
+	.contenido {
+		border-top: solid black 0.1em;
+		float:none;
+		padding: 0.9em;
+		width:100%;
+		margin-left:0;
+	}
+	aside {
+		border-top: solid black 0.1em;
+		float:none;
+		padding: 0.8em;
+		width:100%;
+		margin-left:0;
+	}
+
 }

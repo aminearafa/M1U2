@@ -9,8 +9,7 @@ body {
 #contenedor {
 	width: 800px;
 	background: #8FA68E;
-	margin-right:auto;
-	margin-left:auto;
+	margin:0auto;
 	overflow: hidden;
 }
 nav {

@@ -1,5 +1,5 @@
-@charset "utf-8";
 /* CSS Document */
+
 body {
 	color: #000;
 	background: #332F29;
@@ -45,6 +45,7 @@ nav ul li a {
 		background: #8FA68E;
 		width:100%;
 
+
 	}
 	nav {
 		background: #FC6;
@@ -73,5 +74,6 @@ nav ul li a {
 		width:100%;
 		margin-left:0;
 	}
+
 
 }

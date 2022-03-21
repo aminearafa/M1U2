@@ -1,7 +1,14 @@
 import React from 'react' ;
-const Header = (props) => {
+const Header = (props) =>{
     return (
-      <div>Header</div>
+        <header>
+            <div className="holder">
+                <div className="logo">
+                    <img src="images/logo.png" width="10O" alt="Transportes X" />
+                    <hl>Transportes X</hl>
+                </div>
+            </div>
+        </header>
     );
 }
 

@@ -10,9 +10,33 @@ const NosotrosPage = ( props ) => {
            <h2>Staff</h2>
            <div className="personas">
                <div className="persona">
-                   <img src="images/nosotros/nosotrosl.jpg" width="75" alt="Juan"/>
+                   <img src="images/nosotros/nosotros1.jpg" width="75" alt="Chuck"/>
                    <h5>Chuck Norris</h5>
-                   <h6>Gerente General</h6>
+                   <h6>Chief Executive Officer</h6>
+                   <p>Chuck refers to himself in the fourth person. Chuck Norris plays Jenga with Stonehenge. When Chuck Norris writes, he makes paper bleed. Freddy Krueger has nightmares about Chuck Norris. When Chuck Norris does a pushup, he’s pushing the Earth down.</p>
+                </div>
+                <div className="persona2">
+                   <img src="images/nosotros/nosotros2.jpg" width="75" alt="Chuck"/>
+                   <h5>María Bogavante</h5>
+                   <h6>Business Manager</h6>
+                   <p>Chuck refers to himself in the fourth person. Chuck Norris plays Jenga with Stonehenge. When Chuck Norris writes, he makes paper bleed. Freddy Krueger has nightmares about Chuck Norris. When Chuck Norris does a pushup, he’s pushing the Earth down.</p>
+                </div>
+                <div className="persona3">
+                   <img src="images/nosotros/nosotros3.jpg" width="75" alt="Chuck"/>
+                   <h5>Rodolfo Langostino</h5>
+                   <h6>Full Stack Developer</h6>
+                   <p>Chuck refers to himself in the fourth person. Chuck Norris plays Jenga with Stonehenge. When Chuck Norris writes, he makes paper bleed. Freddy Krueger has nightmares about Chuck Norris. When Chuck Norris does a pushup, he’s pushing the Earth down.</p>
+                </div>
+                <div className="persona4">
+                   <img src="images/nosotros/nosotros4.jpg" width="75" alt="Chuck"/>
+                   <h5>Lisa Simson</h5>
+                   <h6>Acount Manager</h6>
+                   <p>Chuck refers to himself in the fourth person. Chuck Norris plays Jenga with Stonehenge. When Chuck Norris writes, he makes paper bleed. Freddy Krueger has nightmares about Chuck Norris. When Chuck Norris does a pushup, he’s pushing the Earth down.</p>
+                </div>
+                <div className="persona5">
+                   <img src="images/nosotros/nosotros5.jpg" width="75" alt="Chuck"/>
+                   <h5>Pepe Palomo</h5>
+                   <h6>Sales Manager</h6>
                    <p>Chuck refers to himself in the fourth person. Chuck Norris plays Jenga with Stonehenge. When Chuck Norris writes, he makes paper bleed. Freddy Krueger has nightmares about Chuck Norris. When Chuck Norris does a pushup, he’s pushing the Earth down.</p>
                 </div>
             </div>

@@ -2,6 +2,12 @@ historia p {
     font-size:0.8em;
 }
 
+.personas{
+
+    display: flex;
+    justify-content: space-between;
+}
+
 .persona {
     width:18%;
     float:left;

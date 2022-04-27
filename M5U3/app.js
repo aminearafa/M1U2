@@ -4,10 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv')
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var app = express();
+var app = express().config();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,6 +23,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+var pool = require('./models/bd'); //bd.js
+
+pool.query( 'select * empleados').then(function(resultados) {
+  console.log(resultados) 
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

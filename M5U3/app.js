@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-require('dotenv')
+require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -26,7 +26,41 @@ app.use('/users', usersRouter);
 
 var pool = require('./models/bd'); //bd.js
 
-pool.query( 'select * empleados').then(function(resultados) {
+// insert
+var pool = require('./bd');
+
+var obj = {
+  nombre: 'Juan',
+  apellido: 'Lopez',
+  trabajo: 'docente',
+  edad: 38,
+  salario: 15000,
+  mail: 'juanlopep@gmail.com'
+}
+
+pool.query("insert into alumnos set ?", [obj]).then(function(resultados) {
+  console.log(resultados);
+});
+
+//UPDATE
+var id = 21;
+var obj = {
+  nombre: 'Pablo',
+  apellido: 'Gomez'
+}
+
+pool.query( "update alumnos set ? where id_emp=?", [obj, id]).then(function(resultados) {
+  console.log(resultados);
+});
+
+//DELETE
+var id = 20;
+pool. query("delete from alumnos where id = ?", [id]).then(function(resultados) {
+  console.log(resultados);
+});
+
+
+pool.query('select * empleados').then(function (resultados) {
   console.log(resultados) 
 });
 

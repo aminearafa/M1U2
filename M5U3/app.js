@@ -27,8 +27,6 @@ app.use('/users', usersRouter);
 var pool = require('./models/bd'); //bd.js
 
 // insert
-var pool = require('./bd');
-
 var obj = {
   nombre: 'Juan',
   apellido: 'Lopez',

@@ -1,0 +1,56 @@
+.homeimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+    margin-bottom: 1.5em;
+}
+
+.img {
+    width: fit-content;
+    max-width: 95%;
+}
+
+.columnas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bienvenidos {
+    float: left;
+}
+
+.bienvenidos, .testimonios {
+    padding: 2em;
+    display: inline-block;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+.bienvenidos p {
+    font-size: 1.3em;
+}
+
+.testimonios {
+    float: right;
+}
+
+.testimonio {
+    background: #ddd;
+    padding: 1em;
+}
+
+.testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+}

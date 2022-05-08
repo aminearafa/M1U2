@@ -1,0 +1,29 @@
+<header>
+    <div class="logo">
+        <img src="/images/logo.png" width="100" alt="Transportes X" />
+        <div class="captions">
+            <h1 class="title">Transportes</h1>
+            <h6 class="subtitle">{{title}}</h6>
+        </div>
+    </div>
+    <form 
+        action="
+            {{#if loggedIn }}
+                /logout
+            {{/if}}
+            {{#unless loggedIn }}
+                /login
+            {{/unless}}
+        " 
+        method="get"
+    >
+        <button class="btn btn-primary " type="submit">
+            {{#if loggedIn }}
+                    Salir
+            {{/if}}
+            {{#unless loggedIn }}
+                Ingresar
+            {{/unless}}
+        </button>
+    </form>
+</header>

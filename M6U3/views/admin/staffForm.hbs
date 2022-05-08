@@ -1,0 +1,47 @@
+<section class="holder">
+    <h2>{{title}}</h2>
+    <div class="flex-center">
+        <form action={{action}} method={{method}} class="card shadow p-3 mb-5 bg-body rounded" style="width: 50%;">
+            {{#if staff}}
+            <div class="m-3">
+                <label class="form-label">Id</label>
+                <input placeholder='{{staff.id}}' class="form-control" type="text" name="id" disabled />
+            </div>
+            {{/if}}
+            <div class="m-3">
+                <label class="form-label">Nombre</label>
+                <input class="form-control" type="text" name="name" {{#if staff}}placeholder='{{staff.name}}'
+                    {{/if}} />
+            </div>
+            <div class="m-3">
+                <label class="form-label">Apellidos</label>
+                <input class="form-control" type="text" name="lastname" {{#if staff}}placeholder='{{staff.lastname}}'
+                    {{/if}} />
+            </div>
+            <div class="m-3">
+                <label class="form-label">Email</label>
+                <input class="form-control" type="text" name="email" {{#if staff}}placeholder='{{staff.email}}'
+                    {{/if}} />
+            </div>
+            <div class="m-3">
+                <label class="form-label">Imagen</label>
+                <input class="form-control" type="text" name="image" {{#if staff}}placeholder='{{staff.image}}'
+                    {{/if}} />
+            </div>
+            <div class="m-3">
+                <label class="form-label">Rol</label>
+                <input class="form-control" type="text" name="role" {{#if staff}}placeholder='{{staff.role}}'
+                    {{/if}} />
+            </div>
+            <div class="m-3">
+                <label class="form-label">Descripcion</label>
+                <textarea class="form-control" rows="3" name="description" {{#if
+                    staff}}placeholder='{{staff.description}}' {{/if}}></textarea>
+            </div>
+            <div class="m-3 flex-center">
+                <button class="btn btn-primary" style="width: 50%;" type="submit">{{#if
+                    staff}}Actualizar{{/if}} {{#unless staff}}Agregar{{/unless}}</button>
+            </div>
+        </form>
+    </div>
+</section>

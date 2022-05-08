@@ -1,0 +1,27 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.holder {
+  padding: 1em;
+}
+
+h2 {
+  font-weight: 400;
+  color: #2e64a1;
+  margin: 0 0 1em;
+}
+
+section {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

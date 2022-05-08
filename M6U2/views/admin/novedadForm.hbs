@@ -1,0 +1,32 @@
+<section class="holder">
+    <h2>{{title}}</h2>
+    <div class="flex-center">
+        <form action={{action}} method={{method}} class="card shadow p-3 mb-5 bg-body rounded" style="width: 50%;">
+            {{#if novedad}}
+            <div class="m-3">
+                <label class="form-label">Id</label>
+                <input placeholder='{{novedad.id}}' class="form-control" type="text" name="title" disabled />
+            </div>
+            {{/if}}
+            <div class="m-3">
+                <label class="form-label">Titulo</label>
+                <input class="form-control" type="text" name="title" {{#if
+                    novedad}}placeholder='{{novedad.title}}'{{/if}} />
+            </div>
+            <div class="m-3">
+                <label class="form-label">Subtitulo</label>
+                <input class="form-control" type="text" name="subtitle" {{#if
+                    novedad}}placeholder='{{novedad.subtitle}}'{{/if}} />
+            </div>
+            <div class="m-3">
+                <label class="form-label">Cuerpo</label>
+                <textarea class="form-control" rows="3" name="body" {{#if
+                    novedad}}placeholder='{{novedad.body}}'{{/if}}></textarea>
+            </div>
+            <div class="m-3 flex-center">
+                <button class="btn btn-primary" style="width: 50%;" type="submit">{{#if
+                    novedad}}Actualizar{{/if}} {{#unless novedad}}Agregar{{/unless}}</button>
+            </div>
+        </form>
+    </div>
+</section>

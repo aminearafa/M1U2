@@ -1,0 +1,28 @@
+<section class="holder">
+    <div class="historia">
+        <h2>Historia</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet error, perferendis expedita tenetur
+            dolor facilis nisi repellendus sapiente magnam aliquid aliquam architecto ab velit repellat nulla 
+            est iure asperiores tempore.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam molestiae unde laborum labore possimus,
+            deserunt fugiat obcaecati at accusamus perferendis iusto provident enim optio voluptas dignissimos reprehenderit 
+            ullam blanditiis.
+        </p>
+    </div>
+    <h2>Staff</h2>
+    <div class="d-flex justify-content-around flex-wrap">
+        {{#each staff}}
+        <div class="g-col-4 persona">
+            <img src='{{this.image}}'  width={75} alt="{{this.name}}-{{this.lastname}}-{{this.id}}" onerror="images/nosotros/default.png"/>
+            <h5>{{this.name}} {{this.lastname}}</h5>
+            <h6>{{this.role}}</h6>
+            <p>
+                {{this.description}}
+            </p>
+        </div>
+        {{/each}}
+    </div>
+</section>

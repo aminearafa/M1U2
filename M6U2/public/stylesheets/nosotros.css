@@ -1,0 +1,43 @@
+.historia p {
+    font-size: 0.8em;
+}
+
+.persona {
+    max-width: 20%;
+    min-width: 20%;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+    margin: 0.5em;
+}
+
+.persona {
+    text-align: center;
+}
+
+.persona img {
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    margin: 0.8em 0;
+}
+
+.persona h5, .persona .h6 {
+    font-weight: normal;
+    color: 2e64a1;
+    margin: 0;
+}
+
+.persona h5 {
+    font-size: 0.9em;
+}
+
+.persona h6 {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.persona p {
+    font-size: 0.7em;
+    margin: 0 1em 1em;
+    color: #444;
+}

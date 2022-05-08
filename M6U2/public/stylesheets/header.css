@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e64a1;
+    padding: 1em;
+}
+
+.title {
+    color: white;
+    font-size: italic;
+    font-weight: 100;
+    display: inline-block;
+    margin: 0;
+}
+
+.subtitle {
+    color: white;
+    font-size: italic;
+    font-weight: 50;
+    display: inline-block;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.captions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}

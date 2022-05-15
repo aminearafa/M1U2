@@ -1,0 +1,13 @@
+.footer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
